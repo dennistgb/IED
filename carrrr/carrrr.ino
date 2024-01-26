@@ -55,7 +55,7 @@ void line_trace() {
     Serial.println(lightVal2);
     if (lightVal1 == 0) {
         if (lightVal2 == 0) {
-            forwards(80);
+            forwards(85);
         }
         else {
             turnright();
@@ -85,7 +85,7 @@ void brake() {
 }
 void turnright() {
     digitalWrite(r1, LOW);
-    analogWrite(r2, 100);
+    analogWrite(r2, 120);
     digitalWrite(l1, LOW);
     digitalWrite(l2, LOW);
 }
@@ -93,5 +93,5 @@ void turnleft() {
     digitalWrite(r1, LOW);
     digitalWrite(r2, LOW);
     digitalWrite(l1, LOW);
-    analogWrite(l2, 140);
+    analogWrite(l2, 100);
 }
