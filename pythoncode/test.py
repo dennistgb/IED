@@ -42,5 +42,6 @@ while True:
 			appi(i[0])
 			break
 	print("cannot try again in 5 seconed")
+	print(myports)
 	time.sleep(5)
 
